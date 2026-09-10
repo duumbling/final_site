@@ -397,7 +397,7 @@ h2::after {
     gap: 8px
 }
 
-.new_posts__post__content img {
+.new_posts__post img {
     width: 70px;
     height: 70px;
 }
