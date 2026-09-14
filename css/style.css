@@ -25,6 +25,8 @@
     font-family: 'OpenSans', sans-serif;
     font-weight: 400;
     font-style: normal;
+
+    transition: all 0.3s ease;
 }
 
 ul,
@@ -48,13 +50,12 @@ button {
 
     background-color: #B59F5B;
     cursor: pointer;
-
-    transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: #c9ac57;
+    background-color: #323232;
 }
+
 
 body {
     max-width: 1660px;
@@ -114,28 +115,30 @@ h1 {
     text-align: center;
 }
 
-.header__header {
+.header__menu {
     display: flex;
     align-items: center;
     gap: 530px;
 }
 
-.header__header ul {
+.header__menu ul {
     display: flex;
     gap: 33px;
 }
 
-.header__header li {
+.header__menu li {
     font-size: 13px;
 
     cursor: pointer;
+    border-bottom: 1px solid transparent;
 
-    transition: all 0.3s ease;
+
 }
 
-.header__header li:hover {
-    color: #B59F5B;
+.header__menu li:hover {
+    border-bottom: 1px solid #fff;
 }
+
 
 /* TRENDS */
 
@@ -206,12 +209,6 @@ h2::after {
 
     background-color: #000000;
     opacity: .6;
-
-    transition: all 0.3s ease;
-}
-
-.content_list__item:hover::after {
-    opacity: .4;
 }
 
 .content_list__item>* {
@@ -255,6 +252,12 @@ h2::after {
     font-weight: 700;
     color: #B59F5B;
     text-transform: uppercase;
+
+    border-bottom: 1px solid transparent;
+}
+
+.content_list__item:hover .tag {
+    border-bottom: 1px solid #B59F5B;
 }
 
 .content_list__item__content h3 {
@@ -263,6 +266,10 @@ h2::after {
     line-height: 24px;
     color: #fff;
     text-transform: uppercase;
+}
+
+.content_list__item:hover h3 {
+    color: #B59F5B;
 }
 
 /* POSTS */
@@ -287,15 +294,13 @@ h2::after {
     cursor: pointer;
 }
 
-.main_content__post:hover .post_info__title {
-    color: #B59F5B
+.main_content__post:hover .tag {
+    border-bottom: 1px solid #B59F5B;
 }
 
 .post_image {
     width: 381px;
     height: 294px;
-
-    transition: all 0.3s ease;
 }
 
 .post_info__title {
@@ -305,8 +310,10 @@ h2::after {
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
+}
 
-    transition: all 0.3s ease;
+.main_content__post:hover .post_info__title {
+    color: #B59F5B;
 }
 
 .post_info__date_author {
@@ -386,10 +393,6 @@ h2::after {
     cursor: pointer;
 }
 
-.new_posts__post:hover .new_posts__post__content .desc {
-    color: #B59F5B
-}
-
 .new_posts__post__content {
     display: flex;
     flex-direction: column;
@@ -408,8 +411,6 @@ h2::after {
     line-height: 18px;
     text-align: left;
     text-transform: uppercase;
-
-    transition: all 0.3s ease;
 }
 
 .side_menu__searchbar {
@@ -423,6 +424,12 @@ h2::after {
     padding-left: 17px;
 
     background-color: #F4F7F6;
+
+    border: 1px solid transparent;
+}
+
+.side_menu__searchbar input:focus {
+    border: 1px solid #B59F5B;
 }
 
 .side_menu__searchbar input::placeholder {
@@ -456,7 +463,14 @@ h2::after {
     padding-left: 17px;
 
     background-color: #F4F7F6;
+
+    border: 1px solid transparent;
 }
+
+.side_menu__mailing input:focus {
+    border: 1px solid #B59F5B;
+}
+
 
 .side_menu__mailing input::placeholder {
     font-size: 13px;
@@ -479,13 +493,13 @@ h2::after {
 
     border: 3px solid #EEEEEE;
     cursor: pointer;
-
-    transition: all 0.3s ease;
 }
 
 .tags_list__tag:hover {
-    border-color: #B59F5B;
+    border: 3px solid #B59F5B;
+    ;
 }
+
 
 .side_menu__themes_list {
     display: flex;
@@ -498,12 +512,6 @@ h2::after {
 
     border-bottom: 2px solid #EEEEEE;
     cursor: pointer;
-
-    transition: all 0.3s ease;
-}
-
-.themes_list__theme:hover {
-    border-bottom: 2px solid #B59F5B;
 }
 
 .themes_list__theme p {
@@ -513,6 +521,10 @@ h2::after {
 
     font-size: 14px;
     font-weight: 700;
+}
+
+.themes_list__theme:hover p {
+    color: #B59F5B;
 }
 
 .themes_list__theme p .counter {
@@ -526,7 +538,7 @@ h2::after {
     font-weight: 700;
     color: #B59F5B;
 
-    transition: all 0.3s ease;
+
 }
 
 /* SHOP */
@@ -592,6 +604,10 @@ h2::after {
 .desc a {
     color: #B59F5B;
     text-decoration: none;
+}
+
+.shop_list__item:hover a {
+    text-decoration: underline;
 }
 
 .actions {
