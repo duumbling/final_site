@@ -78,7 +78,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: 450px; */
     min-height: 450px;
     margin-bottom: 60px;
     padding-top: 28px;
@@ -118,7 +117,6 @@ header>* {
 
 h1 {
     width: 687px;
-    /* height: 129px; */
     min-height: 129px;
 
     font-weight: 700;
@@ -130,7 +128,9 @@ h1 {
 .header-menu {
     display: flex;
     align-items: center;
-    gap: 530px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 244px;
 }
 
 .header-menu ul {
