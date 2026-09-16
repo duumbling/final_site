@@ -130,7 +130,6 @@ h1 {
 
     padding: 0 244px;
 
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -259,7 +258,7 @@ h2::after {
     margin-bottom: 15px;
 }
 
-.content-list--item:hover .tag a {
+.content-list--item .tag a:hover {
     border-bottom: 1px solid #B59F5B;
 }
 
@@ -271,7 +270,7 @@ h2::after {
     text-transform: uppercase;
 }
 
-.content-list--item:hover h3 {
+.content-list--item h3:hover {
     color: #B59F5B;
 }
 
@@ -297,7 +296,7 @@ h2::after {
     cursor: pointer;
 }
 
-.main-content--post:hover .tag a {
+.main-content--post .tag a:hover {
     border-bottom: 1px solid #B59F5B;
 }
 
@@ -315,7 +314,7 @@ h2::after {
     text-transform: uppercase;
 }
 
-.main-content--post:hover .post-info--title {
+.main-content--post .post-info--title:hover {
     color: #B59F5B;
 }
 
@@ -523,7 +522,7 @@ h2::after {
     font-weight: 700;
 }
 
-.themes-list--theme:hover p {
+.themes-list--theme p:hover {
     color: #B59F5B;
 }
 
@@ -602,7 +601,7 @@ h2::after {
     text-transform: none;
 }
 
-.shop-list--item:hover a {
+.shop-list--item a:hover {
     border-bottom: 1px solid #B59F5B;
 }
 
