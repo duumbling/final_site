@@ -159,7 +159,7 @@ main {
     gap: 60px;
 }
 
-.main--trends-section {
+.trends-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,13 +191,13 @@ h2::after {
     opacity: 0.4;
 }
 
-.main--trends-section .content-list {
+.trends-section .content-list {
     display: flex;
     gap: 4px;
     justify-content: center;
 }
 
-.content-list--item {
+.trends-section .content-list .item {
     position: relative;
 
     display: flex;
@@ -210,7 +210,7 @@ h2::after {
     cursor: pointer;
 }
 
-.content-list--item::after {
+.trends-section .content-list .item::after {
     content: "";
     position: absolute;
     top: 0;
@@ -222,47 +222,47 @@ h2::after {
     opacity: 0.6;
 }
 
-.content-list--item>* {
+.trends-section .content-list .item>* {
     position: relative;
     z-index: 2;
 
     text-transform: uppercase;
 }
 
-.content-list--item:first-of-type {
+.trends-section .content-list .item:first-of-type {
     background-image: url("../images/trend1.jpg");
 }
 
-.content-list--item:nth-of-type(2) {
+.trends-section .content-list .item:nth-of-type(2) {
     background-image: url("../images/trend2.jpg");
 }
 
-.content-list--item:nth-of-type(3) {
+.trends-section .content-list .item:nth-of-type(3) {
     background-image: url("../images/trend3.jpg");
 }
 
-.content-list--item:last-of-type {
+.trends-section .content-list .item:last-of-type {
     background-image: url("../images/trend4.jpg");
 }
 
-.content-list--item--content {
+.trends-section .content-list .item .content {
     width: 100%;
     padding: 40px 0 19px 35px;
 
     border: 3px solid rgba(181, 159, 91, 0.6);
 }
 
-.tags {
+.trends-section .tags-list {
     display: flex;
     gap: 17px;
     margin-bottom: 15px;
 }
 
-.content-list--item .tag a:hover {
+.trends-section .tags-list .tag a:hover {
     border-bottom: 1px solid #B59F5B;
 }
 
-.content-list--item--content h3 {
+.trends-section .content-list .item .content h3 {
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
@@ -270,7 +270,7 @@ h2::after {
     text-transform: uppercase;
 }
 
-.content-list--item h3:hover {
+.trends-section .content-list .item h3:hover {
     color: #B59F5B;
 }
 
@@ -282,13 +282,13 @@ h2::after {
     gap: 109px;
 }
 
-.main-content--posts-list {
+.posts-section .main-content .posts-list {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
-.main-content--post {
+.posts-section .main-content .posts-list .post {
     display: flex;
     width: 775px;
     gap: 31px;
@@ -296,7 +296,13 @@ h2::after {
     cursor: pointer;
 }
 
-.main-content--post .tag a:hover {
+.posts-section .tags-list {
+    display: flex;
+    margin-bottom: 15px;
+    gap: 17px;
+}
+
+.posts-section .main-content .posts-list .post .tag a:hover {
     border-bottom: 1px solid #B59F5B;
 }
 
@@ -305,7 +311,7 @@ h2::after {
     height: 294px;
 }
 
-.post-info--title {
+.post-info .title {
     margin-bottom: 32px;
 
     font-size: 20px;
@@ -314,34 +320,34 @@ h2::after {
     text-transform: uppercase;
 }
 
-.main-content--post .post-info--title:hover {
+.posts-section .main-content .posts-list .post .post-info .title:hover {
     color: #B59F5B;
 }
 
-.post-info--date-author {
+.post-info .date-author {
     display: flex;
     margin-bottom: 46px;
     gap: 15px;
 }
 
-.date {
+.post-info .date {
     font-size: 12px;
     color: #888888;
 }
 
-.author {
+.post-info .author {
     font-size: 12px;
     font-weight: bold;
     color: #000000;
 }
 
-.post-info--desc {
+.post-info .desc {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
-.post-info--desc p {
+.post-info .desc p {
     font-size: 15px;
     line-height: 22px;
 }
@@ -352,13 +358,13 @@ h2::after {
     display: flex;
     flex-direction: column;
     height: 100%;
-    gap: 63px;
+    gap: 58px;
 }
 
 .section-title {
     position: relative;
 
-    margin-bottom: 55px;
+    margin-bottom: 42px;
 
     font-size: 14px;
     font-weight: 700;
@@ -381,33 +387,33 @@ h2::after {
     opacity: 0.4;
 }
 
-.new-posts--posts {
+.new-posts .posts {
     display: flex;
     flex-direction: column;
     margin-bottom: 60px;
     gap: 22px;
 }
 
-.new-posts--post {
+.new-posts .posts .post {
     display: flex;
     gap: 20px;
 
     cursor: pointer;
 }
 
-.new-posts--post--content {
+.new-posts .posts .post .content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 5px;
 }
 
-.new-posts--post img {
+.new-posts .posts .post img {
     width: 70px;
     height: 70px;
 }
 
-.new-posts--post--content .desc {
+.new-posts .posts .post .content .desc {
     font-size: 14px;
     font-weight: 700;
     line-height: 18px;
@@ -415,12 +421,18 @@ h2::after {
     text-transform: uppercase;
 }
 
-.side-menu--searchbar {
+.new-posts .posts .post .content .date {
+    font-size: 12px;
+    line-height: 10px;
+    color: #757575;
+}
+
+.side-menu .searchbar {
     display: flex;
     height: 48px;
 }
 
-.side-menu--searchbar input {
+.side-menu .searchbar input {
     flex-grow: 1;
     height: 100%;
     padding-left: 17px;
@@ -430,17 +442,17 @@ h2::after {
     border: 1px solid transparent;
 }
 
-.side-menu--searchbar input:focus {
+.side-menu .searchbar input:focus {
     border: 1px solid #B59F5B;
 }
 
-.side-menu--searchbar input::placeholder {
+.side-menu .searchbar input::placeholder {
     font-size: 13px;
     color: #000000;
     opacity: 54%;
 }
 
-.side-menu--searchbar button {
+.side-menu .searchbar button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -448,18 +460,24 @@ h2::after {
     height: 48px;
 }
 
-.side-menu--searchbar button img {
+.side-menu .searchbar button img {
     width: 18px;
     height: 18px;
 }
 
-.side-menu--mailing {
+.side-menu .mailing {
+    display: flex;
+    flex-direction: column;
+    /* gap: 18px; */
+}
+
+.side-menu .mailing form {
     display: flex;
     flex-direction: column;
     gap: 18px;
 }
 
-.side-menu--mailing input {
+.side-menu .mailing form input {
     width: 100%;
     height: 48px;
     padding-left: 17px;
@@ -469,23 +487,23 @@ h2::after {
     border: 1px solid transparent;
 }
 
-.side-menu--mailing input:focus {
+.side-menu .mailing form input:focus {
     border: 1px solid #B59F5B;
 }
 
-.side-menu--mailing input::placeholder {
+.side-menu .mailing form input::placeholder {
     font-size: 13px;
     color: #000000;
     opacity: 54%;
 }
 
-.side-menu--tags-list {
+.side-menu .tags .tags-list {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
 }
 
-.tags-list--tag {
+.side-menu .tags .tags-list .tag {
     padding: 7px 13px;
 
     font-size: 12px;
@@ -496,24 +514,24 @@ h2::after {
     cursor: pointer;
 }
 
-.tags-list--tag:hover {
+.side-menu .tags .tags-list .tag:hover {
     border: 3px solid #B59F5B;
 }
 
-.side-menu--themes-list {
+.themes-list {
     display: flex;
     flex-direction: column;
     gap: 19px;
 }
 
-.themes-list--theme {
+.themes-list .theme {
     padding-bottom: 13px;
 
     border-bottom: 2px solid #EEEEEE;
     cursor: pointer;
 }
 
-.themes-list--theme p {
+.themes-list .theme p {
     position: relative;
 
     display: inline-block;
@@ -522,11 +540,11 @@ h2::after {
     font-weight: 700;
 }
 
-.themes-list--theme p:hover {
+.themes-list .theme p:hover {
     color: #B59F5B;
 }
 
-.themes-list--theme p .counter {
+.themes-list .theme p .counter {
     position: absolute;
     top: -4px;
     right: -15px;
@@ -551,7 +569,7 @@ h2::after {
     gap: 66px;
 }
 
-.shop-list--item {
+.shop-list .item {
     position: relative;
 
     display: flex;
@@ -559,14 +577,14 @@ h2::after {
     align-items: center;
 }
 
-.shop-list--item img {
+.shop-list .item img {
     width: 300px;
     height: 204px;
 
     margin-bottom: -29px;
 }
 
-.shop-list--item--content {
+.shop-list .item .content {
     z-index: 2;
 
     width: 346px;
@@ -581,7 +599,7 @@ h2::after {
     align-items: flex-start;
 }
 
-.title {
+.shop-list .item .content .title {
     margin-bottom: 15px;
 
     font-weight: 700;
@@ -589,19 +607,19 @@ h2::after {
     text-transform: uppercase;
 }
 
-.desc {
+.shop-list .item .content .desc {
     margin-bottom: 25px;
 
-    font-size: 15px;
+    font-size: 14px;
     line-height: 22px;
 }
 
-.desc a {
+.shop-list .item .content .desc a {
     font-size: 15px;
     text-transform: none;
 }
 
-.shop-list--item a:hover {
+.shop-list .item a:hover {
     border-bottom: 1px solid #B59F5B;
 }
 
