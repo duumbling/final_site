@@ -558,7 +558,7 @@ h2::after {
 
 /* SHOP */
 
-.main--shop-section .container {
+.shop-section .container {
     flex-direction: column;
     align-items: center;
     gap: 40px;
